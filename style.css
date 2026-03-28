@@ -1,24 +1,95 @@
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #f9c74f, #f9844a);
+  color: white;
   text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 20px;
+  gap: 20px;
 }
 
 .producto {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s;
 }
 
-button {
+.producto:hover {
+  transform: scale(1.03);
+}
+
+.producto h3 {
+  margin: 10px 0;
+}
+
+.producto button {
+  background: #25D366;
+  border: none;
+  color: white;
   padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
 }
+
+.producto button:hover {
+  background: #1ebe5d;
+}
+
+.carrito {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.btn-comprar {
+  background: #25D366;
+  color: white;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-comprar:hover {
+  background: #1ebe5d;
+}
+
 .whatsapp {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25D366;
-  color: white;
+  background: #25D366;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.whatsapp img {
+  width: 35px;
+}
   font-size: 24px;
   padding: 15px;
   border-radius: 50%;
