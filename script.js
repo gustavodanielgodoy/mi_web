@@ -16,7 +16,6 @@ function mostrarProductos() {
     div.innerHTML = `
       <img src="${prod.imagen}">
       <h3>${prod.nombre}</h3>
-      <p>${prod.descripcion}</p>
       <p><strong>$${prod.precio}</strong></p>
       <button onclick="agregarAlCarrito(${index})">Agregar</button>
     `;
