@@ -56,7 +56,7 @@ function comprar() {
   mensaje += `%0ATotal: $${total}%0A`;
   mensaje += `%0ANombre:%0ADirección:%0AForma de pago:%0A`;
 
-  let telefono = "TU_NUMERO";
+  let telefono = "+5493624711203";
 
   let url = `https://wa.me/${telefono}?text=${mensaje}`;
   window.open(url, "_blank");
