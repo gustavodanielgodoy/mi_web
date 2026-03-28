@@ -1,7 +1,7 @@
 const productos = [
-  { imagen: "img/miel1k.jpg", nombre: "Miel 1kg", precio: 8000 },
-  { imagen: "img/miel500.jpg", nombre: "Miel 500g", precio: 5000 },
-  { imagen: "img/miel250.jpg", nombre: "Miel 250g", precio: 3500 }
+  { imagen: "img/miel1k.jpeg", nombre: "Miel 1kg", precio: 8000 },
+  { imagen: "img/miel500.jpeg", nombre: "Miel 500g", precio: 5000 },
+  { imagen: "img/miel250.jpeg", nombre: "Miel 250g", precio: 3500 }
 ];
 
 let carrito = [];
