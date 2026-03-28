@@ -159,3 +159,9 @@ h1 {
   object-fit: cover;
   border-radius: 10px;
 }
+
+@media (max-width: 600px) {
+  .producto img {
+    height: 180px;
+  }
+}
