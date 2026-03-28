@@ -40,7 +40,7 @@ function renderCarrito() {
 
 function comprar() {
   if (carrito.length === 0) {
-    alert("El carrito está vacío");
+    alert("El carrito estÃ¡ vacÃ­o");
     return;
   }
 
@@ -50,7 +50,7 @@ function comprar() {
     mensaje += `- ${prod.nombre}%0A`;
   });
 
-  let telefono = "549362XXXXXXX"; // ? CAMBIAR POR TU NÚMERO
+  let telefono = "5493624711203"; // ? CAMBIAR POR TU NÃšMERO
 
   let url = `https://wa.me/${telefono}?text=${mensaje}`;
   window.open(url, "_blank");
