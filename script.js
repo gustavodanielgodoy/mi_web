@@ -44,13 +44,19 @@ function comprar() {
     return;
   }
 
-  let mensaje = "Hola, quiero pedir:%0A";
+  let mensaje = "Hola! Quiero hacer el siguiente pedido:%0A%0A";
+
+  let total = 0;
 
   carrito.forEach(prod => {
-    mensaje += `- ${prod.nombre}%0A`;
+    mensaje += `- ${prod.nombre} ($${prod.precio})%0A`;
+    total += prod.precio;
   });
 
-  let telefono = "+5493624711203"; // ? CAMBIAR POR TU NÚMERO
+  mensaje += `%0ATotal: $${total}%0A`;
+  mensaje += `%0ANombre:%0ADirección:%0AForma de pago:%0A`;
+
+  let telefono = "TU_NUMERO";
 
   let url = `https://wa.me/${telefono}?text=${mensaje}`;
   window.open(url, "_blank");
