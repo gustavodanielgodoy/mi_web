@@ -50,7 +50,7 @@ function comprar() {
     mensaje += `- ${prod.nombre}%0A`;
   });
 
-  let telefono = "5493624711203"; // ? CAMBIAR POR TU NÚMERO
+  let telefono = "+5493624711203"; // ? CAMBIAR POR TU NÚMERO
 
   let url = `https://wa.me/${telefono}?text=${mensaje}`;
   window.open(url, "_blank");
