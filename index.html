@@ -2,23 +2,29 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Tienda de Miel</title>
+  <title>Miel Natural Premium</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Tienda de Miel ??</h1>
+<header>
+  <h1>🍯 Miel Natural Premium</h1>
+  <p>100% pura - directa del productor</p>
+</header>
 
-<div id="productos"></div>
+<section id="productos" class="grid"></section>
 
-<h2>Carrito</h2>
-<ul id="carrito"></ul>
+<section class="carrito">
+  <h2>🛒 Tu pedido</h2>
+  <ul id="carrito"></ul>
+  <p id="total"></p>
+  <button class="btn-comprar" onclick="comprar()">Comprar por WhatsApp</button>
+</section>
 
-<button onclick="comprar()">Comprar por WhatsApp</button>
+<a href="https://wa.me/5493624711203" class="whatsapp" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
 
 <script src="script.js"></script>
-  <a href="https://wa.me/+5493624711203" class="whatsapp" target="_blank">
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="40">
-</a>
 </body>
 </html>
