@@ -1,6 +1,7 @@
 const productos = [
-  { nombre: "Miel 1kg", precio: 3000 },
-  { nombre: "Miel 500g", precio: 1800 }
+  { nombre: "Miel 1kg", precio: 8000 },
+  { nombre: "Miel 500g", precio: 5000 },
+  { nombre: "Miel 250g", precio: 3500 }
 ];
 
 let carrito = [];
