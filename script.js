@@ -29,13 +29,19 @@ function agregarAlCarrito(index) {
 
 function renderCarrito() {
   const lista = document.getElementById("carrito");
+  const totalEl = document.getElementById("total");
+
   lista.innerHTML = "";
+  let total = 0;
 
   carrito.forEach(prod => {
     const li = document.createElement("li");
-    li.textContent = prod.nombre;
+    li.textContent = `${prod.nombre} - $${prod.precio}`;
     lista.appendChild(li);
+    total += prod.precio;
   });
+
+  totalEl.textContent = "Total: $" + total;
 }
 
 function comprar() {
@@ -45,7 +51,6 @@ function comprar() {
   }
 
   let mensaje = "Hola! Quiero hacer el siguiente pedido:%0A%0A";
-
   let total = 0;
 
   carrito.forEach(prod => {
@@ -54,9 +59,9 @@ function comprar() {
   });
 
   mensaje += `%0ATotal: $${total}%0A`;
-  mensaje += `%0ANombre:%0ADirección:%0AForma de pago:%0A`;
+  mensaje += `%0A📌 Datos:%0ANombre:%0ADirección:%0AForma de pago:%0A`;
 
-  let telefono = +5493624711203;
+  let telefono = "5493624711203";
 
   let url = `https://wa.me/${telefono}?text=${mensaje}`;
   window.open(url, "_blank");
